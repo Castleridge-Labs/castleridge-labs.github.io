@@ -24,7 +24,7 @@ export const siteConfig = {
   ],
   links: {
     facebook: "https://www.facebook.com/castleridgelabs",
-    twitter: "https://twitter.com/castleridgelabs",
+    twitter: "https://twitter.com/CastleridgeL",
     buymeacoffee: "https://www.buymeacoffee.com/castleridgelabs",
   },
 }
