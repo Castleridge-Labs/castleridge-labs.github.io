@@ -10,17 +10,17 @@ export const siteConfig = {
       href: "/",
     },
     {
-      title: "Features",
-      href: "#features",
-    },
-    {
-      title: "Stats",
-      href: "#stats",
-    },
-    {
       title: "Web App",
       href: "/webapp",
     },
+    {
+      title: "Blog",
+      href: "/blog",
+    },
+    {
+      title: "Releases",
+      href: "/releases",
+    }
   ],
   links: {
     facebook: "https://www.facebook.com/castleridgelabs",

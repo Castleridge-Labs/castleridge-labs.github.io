@@ -13,8 +13,8 @@ export default function Home() {
           className="relative"
           src="/one.png"
           alt="ufc calendar picture"
-          width={500}
-          height={700}
+          width={400}
+          height={500}
           priority
         />
       </div>
