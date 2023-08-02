@@ -26,7 +26,7 @@ export default function Home() {
                   className="lucide lucide-eye mr-1"
                 />
                 <h4 className="scroll-m-20 text-xl font-semibold tracking-tight">
-                  Here's what's new in v1.0.0
+                  Here&lsquo;s what&lsquo;s new in v1.0.0
                 </h4>
               </div>
 
