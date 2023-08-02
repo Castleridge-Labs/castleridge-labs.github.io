@@ -1,3 +1,4 @@
+import { Icons } from "@/components/icons";
 import {
   Accordion,
   AccordionContent,
@@ -13,16 +14,42 @@ export default function Home() {
           <AccordionItem value="item-1">
             <AccordionTrigger>Release 1.0.0</AccordionTrigger>
             <AccordionContent>
-              <h4 className="scroll-m-20 text-xl font-semibold tracking-tight">
-                Here's what's new in v1.0.0
-              </h4>
+              <div className="flex items-center">
+                <Icons.eyes
+                  width="24"
+                  height="24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  className="lucide lucide-eye mr-1"
+                />
+                <h4 className="scroll-m-20 text-xl font-semibold tracking-tight">
+                  Here's what's new in v1.0.0
+                </h4>
+              </div>
+
               <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
                 <li>Able to favourite fights to build up hype</li>
                 <li>Able to upvote and downvote fights after they conclude</li>
               </ul>
-              <h4 className="scroll-m-20 text-xl font-semibold tracking-tight">
-                Fixed issues
-              </h4>
+              <div className="flex items-center">
+                <Icons.checkMark
+                  width="24"
+                  height="24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  className="lucide lucide-check mr-1"
+                />
+                <h4 className="scroll-m-20 text-xl font-semibold tracking-tight">
+                  Fixed issues
+                </h4>
+              </div>
+
               <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
                 <li>Fixed issue where fights would not show up</li>
               </ul>
