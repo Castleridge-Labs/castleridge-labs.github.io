@@ -2,11 +2,11 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex min-h-screen flex-col items-center justify-between p-8 md:p-24">
       <div className="w-full md:flex md:justify-around place-items-center z-[-1]">
-        <p className="w-full md:max-w-[30ch] md:text-4xl font-semibold mb-10">
-          Get live updates of UFC events and view previous/upcoming
-          events with one click.
+        <p className="w-full md:max-w-[30ch] font-semibold mb-10 text-[min(10vw,30px)]">
+          Get live updates of UFC events and view previous/upcoming events with
+          one click.
         </p>
 
         <Image
