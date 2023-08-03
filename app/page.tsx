@@ -4,8 +4,8 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="w-full md:flex md:justify-around place-items-center z-[-1]">
-        <p className="w-full md:max-w-[25ch] md:text-2xl font-semibold mb-10">
-          Conveniently get live updates of UFC events and view previous/upcoming
+        <p className="w-full md:max-w-[30ch] md:text-4xl font-semibold mb-10">
+          Get live updates of UFC events and view previous/upcoming
           events with one click.
         </p>
 
