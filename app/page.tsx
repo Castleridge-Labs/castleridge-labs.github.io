@@ -30,8 +30,8 @@ export default function Home() {
             <Image
               src={"/chromestore.png"}
               alt="logo"
-              width={206}
-              height={56}
+              width={340}
+              height={96}
             />
             <h2 className={`mb-3 text-2xl font-semibold`}>
               Get UFC Calendar Now
