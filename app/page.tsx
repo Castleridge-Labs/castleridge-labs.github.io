@@ -34,7 +34,7 @@ export default function Home() {
               height={56}
             />
             <h2 className={`mb-3 text-2xl font-semibold`}>
-              Download Chrome Extension Now
+              Get UFC Calendar Now
             </h2>
             <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
               It&lsquo;s free!
