@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-8 md:p-24">
       <div className="w-full md:flex md:justify-around place-items-center z-[-1]">
-        <p className="w-full md:max-w-[30ch] font-semibold mb-10 text-[min(10vw,30px)]">
+        <p className="text-balance w-full md:max-w-[30ch] font-semibold mb-10 text-[min(10vw,30px)]">
           Get live updates of UFC events and view previous/upcoming events with
           one click.
         </p>
@@ -34,10 +34,7 @@ export default function Home() {
               height={56}
             />
             <h2 className={`mb-3 text-2xl font-semibold`}>
-              Download Chrome Extension{" "}
-              <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-                -&gt;
-              </span>
+              Download Chrome Extension Now
             </h2>
             <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
               It&lsquo;s free!
