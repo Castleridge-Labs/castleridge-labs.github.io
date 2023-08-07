@@ -7,14 +7,14 @@ export default function Home() {
       trigger: "Release 1.0.0",
       features: [
         "Able to favourite fights to build up hype",
-        "Able to upvote and downvote fights after they conclude",
+        "Able to upvote and downvote fights after they have concluded.",
       ],
-      fixes: ["Fixed issue where fights would not show up"],
     },
     {
       trigger: "Release 0.1.5",
-      features: ["Show the tale of the tape with localized units"],
-      fixes: ["Fixed issue where fights would not show up"],
+      features: [
+        "Preferred Unit Systems for Height and Weight, Whether you're more confortable with KG or LBS, IN, or CM, the choice is yours.",
+      ],
     },
   ];
   return (
@@ -26,7 +26,7 @@ export default function Home() {
               key={index}
               trigger={release.trigger}
               features={release.features}
-              fixes={release.fixes}
+              fixes={release?.fixes}
             />
           ))}
         </Accordion>
