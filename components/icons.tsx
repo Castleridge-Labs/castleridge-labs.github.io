@@ -1,10 +1,12 @@
-import { LucideProps, Twitter, Facebook, Check } from "lucide-react";
+import { LucideProps, Twitter, Facebook, Check, ChevronLeft, ChevronRight } from "lucide-react";
 
 import Image from "next/image";
 
 export const Icons = {
   twitter: Twitter,
   facebook: Facebook,
+  chevronLeft: ChevronLeft,
+  chevronRight: ChevronRight,
   logo: (props: LucideProps) => (
     <Image
       className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
