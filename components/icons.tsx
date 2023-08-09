@@ -1,4 +1,10 @@
-import { LucideProps, Twitter, Facebook, Check, ChevronLeft, ChevronRight } from "lucide-react";
+import {
+  LucideProps,
+  Twitter,
+  Facebook,
+  ChevronLeft,
+  ChevronRight,
+} from "lucide-react";
 
 import Image from "next/image";
 

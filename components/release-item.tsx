@@ -41,7 +41,8 @@ export default function ReleaseItem({
             <li key={index}>{feature}</li>
           ))}
         </ul>
-        {fixes?.length > 0 ? (
+        {fixes && fixes.length > 0 ? (
+
           <div className="flex items-center">
             <Icons.checkMark
               width="24"

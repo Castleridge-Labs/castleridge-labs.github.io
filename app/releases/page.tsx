@@ -1,8 +1,14 @@
 import ReleaseItem from "@/components/release-item";
 import { Accordion } from "@/components/ui/accordion";
 
+interface Release {
+  trigger: string;
+  features: string[];
+  fixes?: string[];
+}
+
 export default function Home() {
-  const releases = [
+  const releases: Release[] = [
     {
       trigger: "Release 1.0.0",
       features: [
