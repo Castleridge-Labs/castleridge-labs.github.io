@@ -40,7 +40,7 @@ export default function Home() {
                     priority={index <= 1}
                   />
                 )}
-                <h2 className="text-2xl font-extrabold">{post.title}</h2>
+                <h2 className="text-xl font-extrabold">{post.title}</h2>
                 {post.description && (
                   <p className="text-muted-foreground">{post.description}</p>
                 )}
