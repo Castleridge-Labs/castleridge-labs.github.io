@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import * as React from "react";
 import Link from "next/link";
@@ -8,22 +8,24 @@ import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
 import { Icons } from "@/components/icons";
 import { MobileNav } from "@/components/mobile-nax";
-import { useSelectedLayoutSegment } from "next/navigation"
+import { useSelectedLayoutSegment } from "next/navigation";
 
 interface MainNavProps {
   items?: NavItem[];
-  children?: React.ReactNode
+  children?: React.ReactNode;
 }
 
 export function MainNav({ items, children }: MainNavProps) {
-  const segment = useSelectedLayoutSegment()
-  const [showMobileMenu, setShowMobileMenu] = React.useState<boolean>(false)
+  const segment = useSelectedLayoutSegment();
+  const [showMobileMenu, setShowMobileMenu] = React.useState<boolean>(false);
 
   return (
     <div className="flex gap-6 md:gap-10">
       <Link href="/" className="hidden items-center space-x-2 md:flex">
         <Icons.logo className="h-6 w-6" />
-        <span className="hidden font-bold sm:inline-block">{siteConfig.name}</span>
+        <span className="hidden font-bold sm:inline-block">
+          {siteConfig.name}
+        </span>
       </Link>
       {items?.length ? (
         <nav className="hidden gap-6 md:flex">
@@ -36,8 +38,8 @@ export function MainNav({ items, children }: MainNavProps) {
                   className={cn(
                     "flex items-center text-sm font-medium text-muted-foreground hover:text-foreground/80 sm:text-sm",
                     item.href.startsWith(`/${segment}`)
-                  ? "text-foreground"
-                  : "text-foreground/60",
+                      ? "text-foreground"
+                      : "text-foreground/60",
                     item.disabled && "cursor-not-allowed opacity-80"
                   )}
                 >
