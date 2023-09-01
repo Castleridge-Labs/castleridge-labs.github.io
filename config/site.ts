@@ -1,9 +1,8 @@
-export type SiteConfig = typeof siteConfig
+export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
   name: "UFC Calendar",
-  description:
-    "UFC Calendar chrome extension landing page.",
+  description: "UFC Calendar chrome extension landing page.",
   mainNav: [
     {
       title: "Home",
@@ -14,17 +13,21 @@ export const siteConfig = {
       href: "/webapp",
     },
     {
+      title: "Score Card Ratings",
+      href: "/ratings",
+    },
+    {
       title: "Blog",
       href: "/blog",
     },
     {
       title: "Releases",
       href: "/releases",
-    }
+    },
   ],
   links: {
     facebook: "https://www.facebook.com/castleridgelabs",
     twitter: "https://twitter.com/CastleridgeL",
     buymeacoffee: "https://www.buymeacoffee.com/castleridgelabs",
   },
-}
+};

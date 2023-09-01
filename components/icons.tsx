@@ -5,6 +5,7 @@ import {
   ChevronLeft,
   ChevronRight,
   X,
+  Star,
 } from "lucide-react";
 
 import Image from "next/image";
@@ -15,6 +16,7 @@ export const Icons = {
   chevronLeft: ChevronLeft,
   chevronRight: ChevronRight,
   close: X,
+  star: Star,
   logo: (props: LucideProps) => (
     <Image
       className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
