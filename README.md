@@ -1,6 +1,9 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# The UI Library being used is: [shadcn](https://ui.shadcn.com/)
+
+This is a [Next.js](https://nextjs.org/) project.
 
 [![Node.js CI](https://github.com/Castleridge-Labs/landing-page/actions/workflows/node.js.yml/badge.svg)](https://github.com/Castleridge-Labs/landing-page/actions/workflows/node.js.yml)
+
 ## Getting Started
 
 First, run the development server:
