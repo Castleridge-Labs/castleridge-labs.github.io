@@ -3,5 +3,17 @@ import React from "react";
 import { RedocStandalone } from "redoc";
 
 export default function ApiDocumentation() {
-  return <RedocStandalone specUrl="https://nz3shsw5j0.execute-api.us-west-2.amazonaws.com/v2/docs" />
-};
+  const RedocOptions = {
+    scrollYOffset: 30,
+  };
+  return (
+    <main className="container h-screen overflow-hidden">
+      <div className="h-5/6 overflow-y-scroll">
+        <RedocStandalone
+          specUrl="https://nz3shsw5j0.execute-api.us-west-2.amazonaws.com/v2/docs"
+          options={RedocOptions}
+        />
+      </div>
+    </main>
+  );
+}
