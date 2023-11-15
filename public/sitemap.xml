@@ -1,20 +1,19 @@
-<!-- public/sitemap.xml -->
    <xml version="1.0" encoding="UTF-8">
    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
      <url>
-       <loc>http://www.ufccalendar.tech/foo</loc>
+       <loc>https://www.ufccalendar.tech/foo</loc>
        <lastmod>2023-11-13</lastmod>
      </url>
      <url>
-       <loc>http://www.ufccalendar.tech/webapp</loc>
+       <loc>https://www.ufccalendar.tech/webapp</loc>
        <lastmod>2023-11-13</lastmod>
      </url>
      <url>
-       <loc>http://www.ufccalendar.tech/blog</loc>
+       <loc>https://www.ufccalendar.tech/blog</loc>
        <lastmod>2023-11-13</lastmod>
      </url>
      <url>
-       <loc>http://www.ufccalendar.tech/releases</loc>
+       <loc>https://www.ufccalendar.tech/releases</loc>
        <lastmod>2023-11-13</lastmod>
      </url>
    </urlset>
