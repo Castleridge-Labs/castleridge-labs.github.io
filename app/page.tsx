@@ -41,13 +41,16 @@ export default function Home() {
             </p>
           </a>
         </div>
-        <div className="flex flex-row items-center w-full">
+        <div className="flex flex-row w-full lg:ml-80 mt-10 sm:mt-0">
           <a
             href="https://microsoftedge.microsoft.com/addons/detail/ufc-calendar/nhdnpeojmfmonkdhohohokcfkphcpdpc"
             className="group rounded-lg border px-5 py-8 transition-colors border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
             target="_blank"
             rel="noopener noreferrer"
           >
+            {/* Just to match the style of the chrome box */}
+            <div style={{width: 340, height: 96}}>
+            </div>
             <h2 className={`mb-3 text-xl font-semibold`}>
               UFC Calendar for Edge
             </h2>
