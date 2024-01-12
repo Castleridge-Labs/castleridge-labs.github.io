@@ -12,6 +12,21 @@ export function SiteHeader() {
         <MainNav items={siteConfig.mainNav} />
         <div className="flex flex-1 items-center justify-end space-x-4">
           <nav className="flex items-center space-x-1">
+          <Link
+              href={siteConfig.links.discord}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div
+                className={buttonVariants({
+                  size: "icon",
+                  variant: "ghost",
+                })}
+              >
+                <Icons.discord className="h-5 w-5" />
+                <span className="sr-only">Join Our Discord</span>
+              </div>
+            </Link>
             <Link
               href={siteConfig.links.facebook}
               target="_blank"

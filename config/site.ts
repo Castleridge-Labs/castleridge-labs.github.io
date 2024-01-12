@@ -26,5 +26,6 @@ export const siteConfig = {
     facebook: "https://www.facebook.com/castleridgelabs",
     twitter: "https://twitter.com/CastleridgeL",
     buymeacoffee: "https://www.buymeacoffee.com/castleridgelabs",
+    discord: "https://discord.gg/dbksy6WqR8"
   },
 }
