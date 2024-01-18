@@ -10,6 +10,15 @@ interface Release {
 export default function Home() {
   const releases: Release[] = [
     {
+      trigger: "Release 1.1.0",
+      features: [
+        "Added a setting to change the time zone.",
+      ],
+      fixes: [
+        "Fixed a bug where No Contests were not being handled properly.",
+      ],
+    },
+    {
       trigger: "Release 1.0.0",
       features: [
         "Able to favourite fights to build up hype",
