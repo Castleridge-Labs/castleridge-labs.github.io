@@ -16,6 +16,7 @@ export default function ReleaseItem({
   features,
   fixes,
 }: ReleaseItemProps) {
+  const releaseVersion = trigger.split(" ")[1];
   return (
     <AccordionItem value={trigger}>
       <AccordionTrigger>{trigger}</AccordionTrigger>
@@ -32,7 +33,7 @@ export default function ReleaseItem({
             className="lucide lucide-eye mr-1"
           />
           <h4 className="scroll-m-20 text-xl font-semibold tracking-tight">
-            Here&lsquo;s what&lsquo;s new in v1.0.0
+            Here&lsquo;s what&lsquo;s new in v{releaseVersion}
           </h4>
         </div>
 
