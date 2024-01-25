@@ -3,12 +3,18 @@ import { Accordion } from "@/components/ui/accordion";
 
 interface Release {
   trigger: string;
-  features: string[];
+  features?: string[];
   fixes?: string[];
 }
 
 export default function Home() {
   const releases: Release[] = [
+    {
+      trigger: "Release 1.1.1",
+      fixes: [
+        "Fixed a bug where some time zones were was not being saved correctly.",
+      ],
+    },
     {
       trigger: "Release 1.1.0",
       features: [
@@ -40,7 +46,7 @@ export default function Home() {
             <ReleaseItem
               key={index}
               trigger={release.trigger}
-              features={release.features}
+              features={release?.features}
               fixes={release?.fixes}
             />
           ))}

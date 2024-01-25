@@ -7,7 +7,7 @@ import {
 
 interface ReleaseItemProps {
   trigger: string;
-  features: string[];
+  features?: string[];
   fixes?: string[];
 }
 
@@ -21,7 +21,7 @@ export default function ReleaseItem({
     <AccordionItem value={trigger}>
       <AccordionTrigger>{trigger}</AccordionTrigger>
       <AccordionContent>
-        <div className="flex items-center">
+        {features &&  features.length > 0 && <div className="flex items-center">
           <Icons.eyes
             width="24"
             height="24"
@@ -35,15 +35,15 @@ export default function ReleaseItem({
           <h4 className="scroll-m-20 text-xl font-semibold tracking-tight">
             Here&lsquo;s what&lsquo;s new in v{releaseVersion}
           </h4>
-        </div>
-
-        <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
-          {features.map((feature, index) => (
-            <li key={index}>{feature}</li>
+        </div>}
+        {features && features.length > 0 ? (
+                  <ul className="my-6 ml-6 list-disc">
+          {features?.map((feature, index) => (
+            <li className="mt-2" key={index}>{feature}</li>
           ))}
         </ul>
+        ) : null}
         {fixes && fixes.length > 0 ? (
-
           <div className="flex items-center">
             <Icons.checkMark
               width="24"
@@ -61,9 +61,9 @@ export default function ReleaseItem({
           </div>
         ) : null}
 
-        <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
+        <ul className="my-6 ml-6 list-disc">
           {fixes?.map((fix, index) => (
-            <li key={index}>{fix}</li>
+            <li className="mt-2" key={index}>{fix}</li>
           ))}
         </ul>
       </AccordionContent>
