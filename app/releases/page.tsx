@@ -12,7 +12,7 @@ export default function Home() {
     {
       trigger: "Release 1.1.1",
       fixes: [
-        "Fixed a bug where some time zones were was not being saved correctly.",
+        "Fixed a bug where some time zones were not being saved correctly.",
       ],
     },
     {
