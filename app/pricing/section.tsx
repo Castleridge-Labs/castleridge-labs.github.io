@@ -13,7 +13,7 @@ export default function Section({ children, includedFeatures }: SectionProps) {
           <div className="p-8 sm:p-10 lg:flex-auto">
             <h3 className="text-2xl font-bold tracking-tight text-gray-900">Monthly membership</h3>
             <div className="mt-10 flex items-center gap-x-4">
-              <h4 className="flex-none text-sm font-semibold leading-6 text-indigo-600">
+              <h4 className="flex-none text-sm font-semibold leading-6 text-blue-600">
                 What’s included
               </h4>
               <div className="h-px flex-auto bg-gray-100" />
@@ -24,7 +24,7 @@ export default function Section({ children, includedFeatures }: SectionProps) {
             >
               {includedFeatures.map(feature => (
                 <li key={feature} className="flex gap-x-3">
-                  <CheckIcon className="h-6 w-5 flex-none text-indigo-600" aria-hidden="true" />
+                  <CheckIcon className="h-6 w-5 flex-none text-blue-600" aria-hidden="true" />
                   {feature}
                 </li>
               ))}
