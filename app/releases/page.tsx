@@ -1,5 +1,5 @@
-import ReleaseItem from "@/components/release-item";
-import { Accordion } from "@/components/ui/accordion";
+import ReleaseItem from '@/components/release-item';
+import { Accordion } from '@/components/ui/accordion';
 
 interface Release {
   trigger: string;
@@ -10,29 +10,23 @@ interface Release {
 export default function Home() {
   const releases: Release[] = [
     {
-      trigger: "Release 1.1.1",
-      fixes: [
-        "Fixed a bug where some time zones were not being saved correctly.",
-      ],
+      trigger: 'Release 1.1.1',
+      fixes: ['Fixed a bug where some time zones were not being saved correctly.'],
     },
     {
-      trigger: "Release 1.1.0",
+      trigger: 'Release 1.1.0',
+      features: ['Added a setting to change the time zone.'],
+      fixes: ['Fixed a bug where No Contests were not being handled properly.'],
+    },
+    {
+      trigger: 'Release 1.0.0',
       features: [
-        "Added a setting to change the time zone.",
-      ],
-      fixes: [
-        "Fixed a bug where No Contests were not being handled properly.",
+        'Able to favourite fights to build up hype',
+        'Able to upvote and downvote fights after they have concluded.',
       ],
     },
     {
-      trigger: "Release 1.0.0",
-      features: [
-        "Able to favourite fights to build up hype",
-        "Able to upvote and downvote fights after they have concluded.",
-      ],
-    },
-    {
-      trigger: "Release 0.1.5",
+      trigger: 'Release 0.1.5',
       features: [
         "Preferred Unit Systems for Height and Weight, Whether you're more confortable with KG or LBS, IN, or CM, the choice is yours.",
       ],

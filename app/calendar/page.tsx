@@ -1,4 +1,4 @@
-import AddCalendar from "./add-calendar";
+import AddCalendar from './add-calendar';
 
 export default function Page() {
   return (

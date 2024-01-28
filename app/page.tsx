@@ -1,12 +1,11 @@
-import Image from "next/image";
+import Image from 'next/image';
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center sm:justify-between container md:p-28">
       <div className="w-full md:flex md:justify-around place-items-center z-[-1]">
         <p className="text-balance w-full md:max-w-[30ch] text-xl lg:text-3xl font-semibold mb-1 mt-1">
-          Get live updates of UFC events and view previous/upcoming events with
-          one click.
+          Get live updates of UFC events and view previous/upcoming events with one click.
         </p>
 
         <Image
@@ -27,18 +26,9 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Image
-              src={"/chromestore.png"}
-              alt="logo"
-              width={340}
-              height={96}
-            />
-            <h2 className={`mb-3 text-xl font-semibold`}>
-              UFC Calendar for Chrome
-            </h2>
-            <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-              It&lsquo;s free!
-            </p>
+            <Image src={'/chromestore.png'} alt="logo" width={340} height={96} />
+            <h2 className={`mb-3 text-xl font-semibold`}>UFC Calendar for Chrome</h2>
+            <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>It&lsquo;s free!</p>
           </a>
         </div>
         <div className="flex flex-row w-full lg:ml-80 mt-10 sm:mt-0">
@@ -48,12 +38,8 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h2 className={`mb-3 text-xl font-semibold`}>
-              UFC Calendar for Edge
-            </h2>
-            <p className={`max-w-[30ch] text-sm opacity-50`}>
-              It&lsquo;s free!
-            </p>
+            <h2 className={`mb-3 text-xl font-semibold`}>UFC Calendar for Edge</h2>
+            <p className={`max-w-[30ch] text-sm opacity-50`}>It&lsquo;s free!</p>
           </a>
         </div>
       </div>

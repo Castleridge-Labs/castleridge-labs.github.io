@@ -3,7 +3,7 @@ import { Suspense } from 'react';
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <main className="w-full min-h-screen flex-col items-center sm:justify-between container px-2 md:p-28">
-      <div className="mx-6 max-w-3xl py-20 sm:mx-auto">
+      <div>
         <Suspense>{children}</Suspense>
       </div>
       <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
@@ -18,6 +18,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           </a>
         </div>
       </div>
+      <script async src="https://js.stripe.com/v3/buy-button.js"></script>
     </main>
   );
 }

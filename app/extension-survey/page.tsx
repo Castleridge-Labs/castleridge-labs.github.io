@@ -1,4 +1,4 @@
-import AddSurvey from "./add-survey";
+import AddSurvey from './add-survey';
 
 export default function Home() {
   return (
