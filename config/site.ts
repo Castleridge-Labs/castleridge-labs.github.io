@@ -5,20 +5,20 @@ export const siteConfig = {
   description: 'UFC Calendar chrome extension landing page.',
   mainNav: [
     {
-      title: 'Home',
-      href: '/',
-    },
-    {
       title: 'Web App',
       href: '/webapp',
     },
+    // {
+    //   title: 'Pricing',
+    //   href: '/pricing',
+    // },
     {
-      title: 'Blog',
-      href: '/blog',
+      title: 'About',
+      href: '/about',
     },
     {
-      title: 'Releases',
-      href: '/releases',
+      title: 'Contact',
+      href: '/contact',
     },
   ],
   links: {
