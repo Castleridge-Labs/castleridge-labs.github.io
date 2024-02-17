@@ -105,55 +105,51 @@ export default function Home() {
         </div>
       </section>
       <section className="w-full py-12 md:py-24 lg:py-32">
-      <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6 lg:gap-10">
-            <div className="flex flex-col justify-center space-y-4">
-              <div className="space-y-2">
-                <div className="inline-block rounded-lg bg-gray-100 px-3 py-1 text-sm dark:bg-gray-800">
-                  User Reviews
-                </div>
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  What our users are saying
-                </h2>
-                <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
-                  We are proud to have a wide range of users who are satisfied with our services.
-                  Here are some of their testimonials.
+        <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6 lg:gap-10">
+          <div className="flex flex-col justify-center space-y-4">
+            <div className="space-y-2">
+              <div className="inline-block rounded-lg bg-gray-100 px-3 py-1 text-sm dark:bg-gray-800">
+                User Reviews
+              </div>
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                What our users are saying
+              </h2>
+              <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
+                We are proud to have a wide range of users who are satisfied with our services. Here
+                are some of their testimonials.
+              </p>
+            </div>
+            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+              <div className="p-4 border rounded-md shadow-sm bg-white dark:bg-gray-800">
+                <p className="text-gray-500 dark:text-gray-400">
+                  &quot;Really like the dropdown extension. Easy to check in on what&apos;s
+                  happening... Do you know if there is anything similar for boxing or
+                  Bellator?&quot;
+                </p>
+                <p className="mt-2 text-sm text-gray-400 dark:text-gray-300">- Mahad M</p>
+              </div>
+              <div className="p-4 border rounded-md shadow-sm bg-white dark:bg-gray-800">
+                <p className="text-gray-500 dark:text-gray-400">
+                  &quot;Amazing extension, especially for us Europeans who have a very hard time
+                  with these timelines.&quot;
+                </p>
+                <p className="mt-2 text-sm text-gray-400 dark:text-gray-300">- Manos Mihalenas</p>
+              </div>
+              <div className="p-4 border rounded-md shadow-sm bg-white dark:bg-gray-800">
+                <p className="text-gray-500 dark:text-gray-400">
+                  &quot;Love it, 100% just what I was looking for instead of just googling &apos;ufc
+                  events&apos; 45 times a week.&quot;
+                </p>
+                <p className="mt-2 text-sm text-gray-400 dark:text-gray-300">
+                  - naytivlost lastname
                 </p>
               </div>
-              <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-                <div className="p-4 border rounded-md shadow-sm bg-white dark:bg-gray-800">
-                  <p className="text-gray-500 dark:text-gray-400">
-                    &quot;Really like the dropdown extension. Easy to check in on what&apos;s
-                    happening... Do you know if there is anything similar for boxing or
-                    Bellator?&quot;
-                  </p>
-                  <p className="mt-2 text-sm text-gray-400 dark:text-gray-300">- Mahad M</p>
-                </div>
-                <div className="p-4 border rounded-md shadow-sm bg-white dark:bg-gray-800">
-                  <p className="text-gray-500 dark:text-gray-400">
-                    &quot;Amazing extension, especially for us Europeans who have a very hard time
-                    with these timelines.&quot;
-                  </p>
-                  <p className="mt-2 text-sm text-gray-400 dark:text-gray-300">- Manos Mihalenas</p>
-                </div>
-                <div className="p-4 border rounded-md shadow-sm bg-white dark:bg-gray-800">
-                  <p className="text-gray-500 dark:text-gray-400">
-                    &quot;Love it, 100% just what I was looking for instead of just googling
-                    &apos;ufc events&apos; 45 times a week.&quot;
-                  </p>
-                  <p className="mt-2 text-sm text-gray-400 dark:text-gray-300">
-                    - naytivlost lastname
-                  </p>
-                </div>
-                <div className="p-4 border rounded-md shadow-sm bg-white dark:bg-gray-800">
-                  <p className="text-gray-500 dark:text-gray-400">
-                    &quot;This is really cool.&quot;
-                  </p>
-                  <p className="mt-2 text-sm text-gray-400 dark:text-gray-300">
-                    - Mustafaa Joly
-                  </p>
-                </div>
+              <div className="p-4 border rounded-md shadow-sm bg-white dark:bg-gray-800">
+                <p className="text-gray-500 dark:text-gray-400">&quot;This is really cool.&quot;</p>
+                <p className="mt-2 text-sm text-gray-400 dark:text-gray-300">- Mustafaa Joly</p>
               </div>
             </div>
+          </div>
         </div>
       </section>
       <section className="w-full py-12 md:py-24 lg:py-32">

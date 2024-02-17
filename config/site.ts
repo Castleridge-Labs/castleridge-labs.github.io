@@ -9,8 +9,8 @@ export const siteConfig = {
       href: '/webapp',
     },
     {
-      "title": "Releases",
-      "href": "/releases"
+      title: 'Releases',
+      href: '/releases',
     },
     // {
     //   title: 'Pricing',
