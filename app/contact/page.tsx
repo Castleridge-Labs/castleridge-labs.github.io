@@ -12,8 +12,8 @@ const ContactPage: React.FC = () => {
                 Contact Us
               </h1>
               <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
-                We&apos;d love to hear from you. Please fill out the form below and we`&apos;`ll get back
-                to you as soon as possible.
+                We&apos;d love to hear from you. Please fill out the form below and we`&apos;`ll get
+                back to you as soon as possible.
               </p>
             </div>
           </div>

@@ -9,7 +9,7 @@ export function SiteHeader() {
   return (
     <header className="px-4 lg:px-6 h-14 flex items-center">
       <MainNav items={siteConfig.mainNav} />
-      <div className="flex items-center justify-end ml-3">
+      <div className="flex items-center justify-end md:ml-3">
         <nav className="flex items-center space-x-1">
           <Link href={siteConfig.links.discord} target="_blank" rel="noreferrer">
             <div

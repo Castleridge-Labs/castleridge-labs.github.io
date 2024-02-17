@@ -227,36 +227,6 @@ export default function Home() {
                 />
               </Link>
             </div>
-            {/* <div className="mx-auto flex w-full items-center justify-center p-4 sm:p-8">
-              <Link
-                href="https://chrome.google.com/webstore/detail/ufc-calendar-with-live-up/pdagojbjdekpdicaefbiolkpgobiaoch"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Image
-                  className="aspect-[2/1] overflow-hidden rounded-lg object-contain object-center"
-                  src={'/chromestore.png'}
-                  alt="logo"
-                  width={340}
-                  height={96}
-                />
-              </Link>
-            </div> */}
-            {/* <div className="mx-auto flex w-full items-center justify-center p-4 sm:p-8">
-              <Link
-                href="https://chrome.google.com/webstore/detail/ufc-calendar-with-live-up/pdagojbjdekpdicaefbiolkpgobiaoch"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Image
-                  className="aspect-[2/1] overflow-hidden rounded-lg object-contain object-center"
-                  src={'/chromestore.png'}
-                  alt="logo"
-                  width={340}
-                  height={96}
-                />
-              </Link>
-            </div> */}
           </div>
         </div>
       </section>
