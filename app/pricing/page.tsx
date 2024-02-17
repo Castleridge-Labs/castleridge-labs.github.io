@@ -1,6 +1,3 @@
-import { Suspense } from 'react';
-import AddPaymentCard from './add-payment-card';
-import Section from './section';
 import { Button } from '@/components/ui/button';
 import { CheckIcon } from 'lucide-react';
 

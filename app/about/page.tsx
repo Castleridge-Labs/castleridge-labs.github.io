@@ -3,14 +3,7 @@ const AboutPage: React.FC = () => {
     <div className="bg-gray-100 p-8">
       <h1 className="text-3xl font-bold mb-4">About UFC Calendar Browser Extension</h1>
       <p className="text-gray-700 mb-4">
-        This browser extension provides a convenient way to keep track of upcoming UFC events. It
-        allows users to view the schedule, set reminders, and get notifications for their favorite
-        fights.
-      </p>
-      <p className="text-gray-700 mb-4">
-        The extension is built using Next.js, React, and TypeScript, making it easy to develop and
-        maintain. It utilizes the UFC API to fetch event data and provides a user-friendly interface
-        for managing the calendar.
+        This browser extension provides a convenient way to keep track of upcoming UFC events.
       </p>
       <p className="text-gray-700">
         Whether you&apos;re a casual fan or a die-hard UFC enthusiast, this extension is a must-have

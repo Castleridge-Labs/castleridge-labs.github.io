@@ -45,9 +45,9 @@ export default function Home() {
           <div className="grid items-center justify-center gap-6 lg:grid-cols-[1fr_500px] lg:gap-12 xl:grid-cols-[1fr_550px]">
             <Image
               alt="Image"
-              className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
+              className="mx-auto aspect-auto overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
               height="310"
-              src="/placeholder.svg"
+              src="/features.png"
               width="550"
             />
             <div className="flex flex-col justify-center space-y-4">
@@ -105,15 +105,7 @@ export default function Home() {
         </div>
       </section>
       <section className="w-full py-12 md:py-24 lg:py-32">
-        <div className="container px-4 md:px-6">
-          <div className="grid items-center justify-center gap-6 lg:grid-cols-[1fr_500px] lg:gap-12 xl:grid-cols-[1fr_550px]">
-            <Image
-              alt="Image"
-              className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
-              height="310"
-              src="/placeholder.svg"
-              width="550"
-            />
+      <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6 lg:gap-10">
             <div className="flex flex-col justify-center space-y-4">
               <div className="space-y-2">
                 <div className="inline-block rounded-lg bg-gray-100 px-3 py-1 text-sm dark:bg-gray-800">
@@ -122,12 +114,12 @@ export default function Home() {
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
                   What our users are saying
                 </h2>
-                <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+                <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
                   We are proud to have a wide range of users who are satisfied with our services.
                   Here are some of their testimonials.
                 </p>
               </div>
-              <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+              <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
                 <div className="p-4 border rounded-md shadow-sm bg-white dark:bg-gray-800">
                   <p className="text-gray-500 dark:text-gray-400">
                     &quot;Really like the dropdown extension. Easy to check in on what&apos;s
@@ -152,9 +144,16 @@ export default function Home() {
                     - naytivlost lastname
                   </p>
                 </div>
+                <div className="p-4 border rounded-md shadow-sm bg-white dark:bg-gray-800">
+                  <p className="text-gray-500 dark:text-gray-400">
+                    &quot;This is really cool.&quot;
+                  </p>
+                  <p className="mt-2 text-sm text-gray-400 dark:text-gray-300">
+                    - Mustafaa Joly
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
         </div>
       </section>
       <section className="w-full py-12 md:py-24 lg:py-32">
@@ -162,9 +161,9 @@ export default function Home() {
           <div className="grid items-center justify-center gap-6 lg:grid-cols-[1fr_500px] lg:gap-12 xl:grid-cols-[1fr_550px]">
             <Image
               alt="Image"
-              className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
+              className="mx-auto aspect-auto overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
               height="310"
-              src="/placeholder.svg"
+              src="/action4.png"
               width="550"
             />
             <div className="flex flex-col justify-center space-y-4">
@@ -184,21 +183,21 @@ export default function Home() {
                   alt="Screenshot 1"
                   className="mx-auto aspect-content overflow-hidden rounded-md object-cover object-center"
                   height="200"
-                  src="/placeholder.svg"
-                  width="200"
+                  src="/action1.png"
+                  width="300"
                 />
                 <Image
                   alt="Screenshot 2"
                   className="mx-auto aspect-content overflow-hidden rounded-md object-cover object-center"
                   height="200"
-                  src="/placeholder.svg"
+                  src="/action2.png"
                   width="200"
                 />
                 <Image
                   alt="Screenshot 3"
                   className="mx-auto aspect-content overflow-hidden rounded-md object-cover object-center"
                   height="200"
-                  src="/placeholder.svg"
+                  src="/action3.png"
                   width="200"
                 />
               </div>
@@ -232,7 +231,7 @@ export default function Home() {
                 />
               </Link>
             </div>
-            <div className="mx-auto flex w-full items-center justify-center p-4 sm:p-8">
+            {/* <div className="mx-auto flex w-full items-center justify-center p-4 sm:p-8">
               <Link
                 href="https://chrome.google.com/webstore/detail/ufc-calendar-with-live-up/pdagojbjdekpdicaefbiolkpgobiaoch"
                 target="_blank"
@@ -246,8 +245,8 @@ export default function Home() {
                   height={96}
                 />
               </Link>
-            </div>
-            <div className="mx-auto flex w-full items-center justify-center p-4 sm:p-8">
+            </div> */}
+            {/* <div className="mx-auto flex w-full items-center justify-center p-4 sm:p-8">
               <Link
                 href="https://chrome.google.com/webstore/detail/ufc-calendar-with-live-up/pdagojbjdekpdicaefbiolkpgobiaoch"
                 target="_blank"
@@ -261,7 +260,7 @@ export default function Home() {
                   height={96}
                 />
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

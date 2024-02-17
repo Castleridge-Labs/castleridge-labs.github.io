@@ -8,6 +8,10 @@ export const siteConfig = {
       title: 'Web App',
       href: '/webapp',
     },
+    {
+      "title": "Releases",
+      "href": "/releases"
+    },
     // {
     //   title: 'Pricing',
     //   href: '/pricing',
@@ -16,10 +20,10 @@ export const siteConfig = {
       title: 'About',
       href: '/about',
     },
-    {
-      title: 'Contact',
-      href: '/contact',
-    },
+    // {
+    //   title: 'Contact',
+    //   href: '/contact',
+    // },
   ],
   links: {
     facebook: 'https://www.facebook.com/castleridgelabs',
