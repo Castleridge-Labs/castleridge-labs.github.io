@@ -5,21 +5,25 @@ export const siteConfig = {
   description: 'UFC Calendar chrome extension landing page.',
   mainNav: [
     {
-      title: 'Home',
-      href: '/',
-    },
-    {
       title: 'Web App',
       href: '/webapp',
-    },
-    {
-      title: 'Blog',
-      href: '/blog',
     },
     {
       title: 'Releases',
       href: '/releases',
     },
+    // {
+    //   title: 'Pricing',
+    //   href: '/pricing',
+    // },
+    {
+      title: 'About',
+      href: '/about',
+    },
+    // {
+    //   title: 'Contact',
+    //   href: '/contact',
+    // },
   ],
   links: {
     facebook: 'https://www.facebook.com/castleridgelabs',
