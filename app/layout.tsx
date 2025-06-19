@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'UFC Calendar - Never Miss a Fight | Browser Extension',
-  description: 'The #1 UFC companion extension. Get live updates, view upcoming events, and track your favorite fighters. Join 50,000+ UFC fans worldwide.',
+  description: 'The #1 UFC companion extension. Get live updates, view upcoming events, and track your favorite fighters. Join 2,000+ UFC fans worldwide.',
   keywords: 'UFC, calendar, browser extension, MMA, fights, live updates, Chrome extension',
 };
 
@@ -29,7 +29,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                   © 2024 Castleridge Labs. All rights reserved.
                 </p>
                 <p className="text-xs text-gray-500">
-                  Helping 50,000+ UFC fans worldwide stay connected to every fight.
+                  Helping 2,000+ UFC fans worldwide stay connected to every fight.
                 </p>
               </div>
               <nav className="flex gap-4 sm:gap-6">

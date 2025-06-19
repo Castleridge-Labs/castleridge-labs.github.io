@@ -351,7 +351,7 @@ export default function Home() {
             </div>
             
             <p className="text-sm text-red-200">
-              ✓ Free forever ✓ No signup required ✓ Instant access
+              ✓ Free ✓ No signup required ✓ Instant access
             </p>
           </div>
         </div>
