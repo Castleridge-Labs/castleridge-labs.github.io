@@ -165,8 +165,7 @@ export default function Home() {
                   ))}
                 </div>
                 <p className="text-gray-600 leading-relaxed mb-4">
-                  "Really like the dropdown extension. Easy to check in on what's happening... 
-                  Do you know if there is anything similar for boxing or Bellator?"
+                  &quot;Really like the dropdown extension. Easy to check in on what&apos;s happening... Do you know if there is anything similar for boxing or Bellator?&quot;
                 </p>
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 bg-red-100 rounded-full flex items-center justify-center">
@@ -186,7 +185,7 @@ export default function Home() {
                   ))}
                 </div>
                 <p className="text-gray-600 leading-relaxed mb-4">
-                  "Amazing extension, especially for us Europeans who have a very hard time with these timelines."
+                  &quot;Amazing extension, especially for us Europeans who have a very hard time with these timelines.&quot;
                 </p>
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 bg-red-100 rounded-full flex items-center justify-center">
@@ -206,7 +205,7 @@ export default function Home() {
                   ))}
                 </div>
                 <p className="text-gray-600 leading-relaxed mb-4">
-                  "Love it, 100% just what I was looking for instead of just googling 'ufc events' 45 times a week."
+                  &quot;Love it, 100% just what I was looking for instead of just googling &apos;ufc events&apos; 45 times a week.&quot;
                 </p>
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 bg-red-100 rounded-full flex items-center justify-center">
