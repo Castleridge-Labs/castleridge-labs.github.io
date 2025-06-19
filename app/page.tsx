@@ -115,7 +115,7 @@ export default function Home() {
                   <EyeOffIcon className="w-6 h-6 text-red-500 mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="font-semibold text-gray-900">Spoiler Protection</h3>
-                    <p className="text-gray-600">Hide results until you're ready to see them</p>
+                    <p className="text-gray-600">Hide results until you&apos;re ready to see them</p>
                   </div>
                 </div>
               </div>
@@ -127,7 +127,7 @@ export default function Home() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Install Now - It's Free
+                  Install Now - It&apos;s Free
                 </Link>
                 <Link
                   className="inline-flex h-11 items-center justify-center rounded-lg border border-gray-300 bg-white px-8 text-base font-medium text-gray-700 shadow-sm transition-all hover:bg-gray-50 hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500"
