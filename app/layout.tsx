@@ -10,29 +10,49 @@ import Link from 'next/link';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'UFC Calendar',
-  description: 'UFC Calendar chrome extension',
+  title: 'UFC Calendar - Never Miss a Fight | Browser Extension',
+  description: 'The #1 UFC companion extension. Get live updates, view upcoming events, and track your favorite fighters. Join 50,000+ UFC fans worldwide.',
+  keywords: 'UFC, calendar, browser extension, MMA, fights, live updates, Chrome extension',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="flex flex-col min-h-screen bg-gray-100 dark:bg-gray-900">
+        <div className="flex flex-col min-h-screen">
           <SiteHeader />
           {children}
-          <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
-            <p className="text-xs text-gray-500 dark:text-gray-400">
-              © 2024 Castleridge Labs. All rights reserved.
-            </p>
-            <nav className="sm:ml-auto flex gap-4 sm:gap-6">
-              <Link className="text-xs hover:underline underline-offset-4" href="#">
-                Terms of Service
-              </Link>
-              <Link className="text-xs hover:underline underline-offset-4" href="#">
-                Privacy
-              </Link>
-            </nav>
+          <footer className="border-t bg-gray-50">
+            <div className="container flex flex-col gap-4 sm:flex-row py-8 px-4 md:px-6 items-center justify-between">
+              <div className="flex flex-col gap-2">
+                <p className="text-sm text-gray-600">
+                  © 2024 Castleridge Labs. All rights reserved.
+                </p>
+                <p className="text-xs text-gray-500">
+                  Helping 50,000+ UFC fans worldwide stay connected to every fight.
+                </p>
+              </div>
+              <nav className="flex gap-4 sm:gap-6">
+                <Link 
+                  className="text-sm text-gray-600 hover:text-red-600 transition-colors" 
+                  href="/terms"
+                >
+                  Terms of Service
+                </Link>
+                <Link 
+                  className="text-sm text-gray-600 hover:text-red-600 transition-colors" 
+                  href="/privacy"
+                >
+                  Privacy Policy
+                </Link>
+                <Link 
+                  className="text-sm text-gray-600 hover:text-red-600 transition-colors" 
+                  href="/contact"
+                >
+                  Contact
+                </Link>
+              </nav>
+            </div>
           </footer>
         </div>
         <TailwindIndicator />
