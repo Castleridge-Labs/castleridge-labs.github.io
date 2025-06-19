@@ -12,7 +12,7 @@ export default function Home() {
             <div className="space-y-4">
               <div className="inline-flex items-center bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 text-sm font-medium">
                 <TrendingUpIcon className="w-4 h-4 mr-2" />
-                #1 UFC Extension - 50,000+ Users
+                #1 UFC Extension - 2,000+ Users
               </div>
               <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
                 UFC Calendar
@@ -48,7 +48,7 @@ export default function Home() {
                 {[...Array(5)].map((_, i) => (
                   <StarIcon key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
                 ))}
-                <span className="ml-2 font-medium">4.8/5 (2,500+ reviews)</span>
+                <span className="ml-2 font-medium">5.0/5 (24 ratings)</span>
               </div>
             </div>
           </div>
@@ -307,7 +307,7 @@ export default function Home() {
                   height={64}
                 />
                 <p className="mt-3 text-gray-900 font-medium">Add to Chrome</p>
-                <p className="text-sm text-gray-600">50,000+ users</p>
+                <p className="text-sm text-gray-600">2,000+ users</p>
               </Link>
               
               <div className="text-center">
@@ -335,7 +335,7 @@ export default function Home() {
                 Ready to Never Miss a Fight?
               </h2>
               <p className="mx-auto max-w-[600px] text-xl text-red-100">
-                Join 50,000+ UFC fans who stay updated with UFC Calendar
+                Join 2,000+ UFC fans who stay updated with UFC Calendar
               </p>
             </div>
             
