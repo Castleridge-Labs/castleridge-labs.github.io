@@ -27,11 +27,11 @@ export const Icons = {
   close: X,
   logo: (props: LucideProps) => (
     <Image
-      className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
+      className="relative"
       src="/icon128.png"
-      alt="ufc calendar logo"
-      width={28}
-      height={28}
+      alt="UFC Calendar Logo"
+      width={32}
+      height={32}
       priority
     />
   ),
