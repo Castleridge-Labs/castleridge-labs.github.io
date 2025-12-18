@@ -12,8 +12,8 @@ import Link from 'next/link';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'UFC Calendar - Never Miss a Fight | Browser Extension',
-  description: 'The #1 UFC companion extension. Get live updates, view upcoming events, and track your favorite fighters. Join 2,000+ UFC fans worldwide.',
+  title: 'UFC Calendar - The Ultimate UFC Companion',
+  description: 'Never miss a fight again. Get live updates, view upcoming events, and track your favorite fighters. Join 2,000+ UFC fans with the #1 browser extension.',
   keywords: 'UFC, calendar, browser extension, MMA, fights, live updates, Chrome extension',
 };
 

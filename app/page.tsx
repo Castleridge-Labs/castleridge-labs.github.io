@@ -10,14 +10,19 @@ export default function Home() {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] bg-[#ee202008] blur-[120px] rounded-full pointer-events-none" />
 
         <div className="relative z-10 max-w-4xl mx-auto">
+          <div className="flex justify-center mb-6">
+            <span className="px-4 py-1.5 rounded-full border border-red-500/30 bg-red-500/10 text-red-500 text-[10px] font-bold uppercase tracking-[0.2em]">
+              The Ultimate UFC Companion
+            </span>
+          </div>
           <h1 className="text-6xl md:text-9xl font-[800] tracking-tighter text-white uppercase mb-8 leading-[0.85]">
             Never Miss <br className="hidden md:block" />
             <span className="text-transparent bg-clip-text bg-gradient-to-b from-white to-white/40">
-              A Single Strike
+              A Fight Again
             </span>
           </h1>
           <p className="text-zinc-400 text-lg md:text-xl max-w-2xl mx-auto font-medium leading-relaxed mb-16 px-4">
-            The #1 UFC companion extension. Get live updates, view upcoming events, and track your favorite fighters with premium precision.
+            Join 2,000+ fans using the #1 UFC companion extension. Get live updates, view upcoming events, and track your favorite fighters with premium precision.
           </p>
         </div>
 
