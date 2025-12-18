@@ -2,6 +2,8 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import { SiteHeader } from '@/components/site-header';
+import { Icons } from '@/components/icons';
+import { siteConfig } from '@/config/site';
 import { TailwindIndicator } from '@/components/tailwind-indicator';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
@@ -17,36 +19,36 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" className="dark">
       <body className={inter.className}>
-        <div className="flex flex-col min-h-screen">
+        <div className="fixed inset-0 z-[9999] pointer-events-none bg-[url('/noise.png')] opacity-[0.03] mix-blend-overlay"></div>
+        <div className="flex flex-col min-h-screen relative z-10">
           <SiteHeader />
           {children}
-          <footer className="border-t bg-gray-50">
+          <footer className="border-t border-white/5 bg-background">
             <div className="container flex flex-col gap-4 sm:flex-row py-8 px-4 md:px-6 items-center justify-between">
               <div className="flex flex-col gap-2">
-                <p className="text-sm text-gray-600">
-                  © 2024 Castleridge Labs. All rights reserved.
-                </p>
-                <p className="text-xs text-gray-500">
-                  Helping 2,000+ UFC fans worldwide stay connected to every fight.
+                <p className="text-xs font-medium text-white/40">
+                  © 2024 Castleridge Labs.
                 </p>
               </div>
-              <nav className="flex gap-4 sm:gap-6">
-                <Link 
-                  className="text-sm text-gray-600 hover:text-red-600 transition-colors" 
-                  href="/terms"
+              <nav className="flex gap-4 sm:gap-6 items-center">
+                <Link
+                  className="text-xs font-medium text-white/40 hover:text-white transition-colors"
+                  href={siteConfig.links.discord}
+                  target="_blank"
                 >
-                  Terms of Service
+                  Discord
                 </Link>
-                <Link 
-                  className="text-sm text-gray-600 hover:text-red-600 transition-colors" 
-                  href="/privacy"
+                <Link
+                  className="text-xs font-medium text-white/40 hover:text-white transition-colors"
+                  href={siteConfig.links.twitter}
+                  target="_blank"
                 >
-                  Privacy Policy
+                  Twitter
                 </Link>
-                <Link 
-                  className="text-sm text-gray-600 hover:text-red-600 transition-colors" 
+                <Link
+                  className="text-xs font-medium text-white/40 hover:text-white transition-colors"
                   href="/contact"
                 >
                   Contact
