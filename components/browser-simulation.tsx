@@ -38,7 +38,7 @@ export function BrowserSimulation() {
                     {/* Omnibox */}
                     <div className="flex-1 h-9 bg-[#1e1e1e] rounded flex items-center px-3 gap-3 text-xs text-white/40 font-mono relative overflow-hidden">
                         <Search className="w-3 h-3" />
-                        <span>chrome-extension://pdagojbjdekpdicaefbiolkpgobiaoch/index</span>
+                        <span>chrome-extension://pdagojbjdekpdicaefbiolkpgobiaoch</span>
                         <div className="absolute right-3 flex items-center gap-2">
                             <Star className="w-3 h-3" />
                         </div>
