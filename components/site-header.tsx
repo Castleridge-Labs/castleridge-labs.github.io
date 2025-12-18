@@ -37,7 +37,7 @@ export function SiteHeader() {
 
           {/* Minimal CTA */}
           <Link
-            href="https://chrome.google.com/webstore/detail/ufc-calendar-with-live-up/pdagojbjdekpdicaefbiolkpgobiaoch"
+            href={siteConfig.links.chrome}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 group"
