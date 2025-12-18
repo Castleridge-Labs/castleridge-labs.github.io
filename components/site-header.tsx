@@ -1,67 +1,44 @@
 import Link from 'next/link';
-
-import { siteConfig } from '@/config/site';
-import { buttonVariants } from '@/components/ui/button';
 import { Icons } from '@/components/icons';
-import { MainNav } from '@/components/main-nav';
-import { MobileNav } from '@/components/mobile-nav';
+import { siteConfig } from '@/config/site';
 
 export function SiteHeader() {
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-gray-200 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60">
-      <div className="container flex h-16 items-center justify-between px-4 md:px-6">
-        <MainNav items={siteConfig.mainNav} />
-        
-        <div className="flex items-center gap-4">
-          {/* Primary CTA */}
+    <header className="fixed top-0 z-50 w-full pointer-events-none mix-blend-difference text-white">
+      <div className="w-full flex h-24 items-start justify-between px-8 py-8 md:px-12 md:py-8">
+
+        {/* Anti-Logo */}
+        <div className="pointer-events-auto">
+          <Link href="/" className="flex flex-col gap-1 group">
+            <span className="text-xs font-mono tracking-widest uppercase opacity-70 group-hover:opacity-100 transition-opacity">
+              UFC_Calendar_Ext
+            </span>
+            <span className="h-px w-0 group-hover:w-full bg-white transition-all duration-300" />
+          </Link>
+        </div>
+
+        {/* Anti-Nav Actions */}
+        <div className="pointer-events-auto flex items-center gap-8">
+          <Link href={siteConfig.links.discord} target="_blank" className="hidden md:block text-xs font-mono uppercase tracking-widest opacity-50 hover:opacity-100 hover:text-red-500 transition-colors">
+            Community
+          </Link>
+
+          <Link href={siteConfig.links.twitter} target="_blank" className="hidden lg:block text-xs font-mono uppercase tracking-widest opacity-50 hover:opacity-100 hover:text-red-500 transition-colors">
+            Twitter
+          </Link>
+
+          {/* Minimal CTA */}
           <Link
             href="https://chrome.google.com/webstore/detail/ufc-calendar-with-live-up/pdagojbjdekpdicaefbiolkpgobiaoch"
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden sm:inline-flex items-center justify-center rounded-lg bg-red-600 px-4 py-2 text-sm font-medium text-white shadow-sm transition-all hover:bg-red-700 hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500"
+            className="flex items-center gap-2 group"
           >
-            Add to Chrome
+            <span className="text-xs font-bold uppercase tracking-widest group-hover:text-red-500 transition-colors">
+              Get Extension
+            </span>
+            <div className="w-2 h-2 bg-white rounded-full group-hover:bg-red-500 transition-colors animate-pulse" />
           </Link>
-          
-          {/* Social Links - Desktop */}
-          <nav className="hidden md:flex items-center space-x-1">
-            <Link href={siteConfig.links.discord} target="_blank" rel="noreferrer">
-              <div
-                className={buttonVariants({
-                  size: 'icon',
-                  variant: 'ghost',
-                })}
-              >
-                <Icons.discord className="h-5 w-5" />
-                <span className="sr-only">Join Our Discord</span>
-              </div>
-            </Link>
-            <Link href={siteConfig.links.facebook} target="_blank" rel="noreferrer">
-              <div
-                className={buttonVariants({
-                  size: 'icon',
-                  variant: 'ghost',
-                })}
-              >
-                <Icons.facebook className="h-5 w-5" />
-                <span className="sr-only">Facebook</span>
-              </div>
-            </Link>
-            <Link href={siteConfig.links.twitter} target="_blank" rel="noreferrer">
-              <div
-                className={buttonVariants({
-                  size: 'icon',
-                  variant: 'ghost',
-                })}
-              >
-                <Icons.twitter className="h-5 w-5 fill-current" />
-                <span className="sr-only">Twitter</span>
-              </div>
-            </Link>
-          </nav>
-          
-          {/* Mobile Navigation */}
-          <MobileNav items={siteConfig.mainNav} />
         </div>
       </div>
     </header>
