@@ -1,7 +1,8 @@
 "use client"
 
 import * as React from "react"
-import { MockExtensionPopup } from "@/components/mock-extension-popup"
+import { MockExtensionPopup } from './mock-extension-popup'
+import { Icons } from './icons'
 import { Search, ChevronLeft, ChevronRight, RotateCw, Star, MoreVertical } from "lucide-react"
 
 export function BrowserSimulation() {
@@ -51,9 +52,7 @@ export function BrowserSimulation() {
                             className={`w-8 h-8 rounded hover:bg-white/10 flex items-center justify-center transition-all ${isOpen ? 'bg-white/10' : ''}`}
                             title="Open UFC Calendar"
                         >
-                            <div className="w-5 h-5 rounded bg-rose-600 flex items-center justify-center">
-                                <span className="text-[8px] font-bold text-white tracking-tighter">UFC</span>
-                            </div>
+                            <Icons.logo />
                         </button>
 
                         <div className="w-8 h-8 rounded flex items-center justify-center opacity-20">
