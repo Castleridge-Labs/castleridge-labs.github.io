@@ -49,6 +49,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 </Link>
                 <Link
                   className="text-xs font-medium text-white/40 hover:text-white transition-colors"
+                  href="/about"
+                >
+                  About
+                </Link>
+                <Link
+                  className="text-xs font-medium text-white/40 hover:text-white transition-colors"
                   href="/contact"
                 >
                   Contact

@@ -27,7 +27,13 @@ export function SiteHeader() {
 
         {/* Anti-Nav Actions */}
         <div className="pointer-events-auto flex items-center gap-8">
-          <Link href={siteConfig.links.discord} target="_blank" className="hidden md:block text-xs font-mono uppercase tracking-widest opacity-50 hover:opacity-100 hover:text-red-500 transition-colors">
+          <Link href="/about" className="hidden md:block text-xs font-mono uppercase tracking-widest opacity-50 hover:opacity-100 hover:text-red-500 transition-colors">
+            About
+          </Link>
+          <Link href="/contact" className="hidden md:block text-xs font-mono uppercase tracking-widest opacity-50 hover:opacity-100 hover:text-red-500 transition-colors">
+            Contact
+          </Link>
+          <Link href={siteConfig.links.discord} target="_blank" className="hidden lg:block text-xs font-mono uppercase tracking-widest opacity-50 hover:opacity-100 hover:text-red-500 transition-colors">
             Community
           </Link>
 
