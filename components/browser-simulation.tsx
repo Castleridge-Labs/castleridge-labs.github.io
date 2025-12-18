@@ -78,10 +78,17 @@ export function BrowserSimulation() {
                     {/* Background Grid */}
                     <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]" />
 
+                    <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/5 to-transparent h-2 w-full animate-scanline pointer-events-none" />
+
                     <div className="text-center z-0 opacity-50 select-none pointer-events-none">
                         <h1 className="text-4xl md:text-6xl font-black uppercase text-white/5 tracking-tighter">
-                            Waiting for Signal
+                            FEED_SYNC_STANDBY
                         </h1>
+                        <div className="flex items-center justify-center gap-2 mt-4">
+                            <div className="w-1 h-1 rounded-full bg-red-500/20" />
+                            <div className="w-1 h-1 rounded-full bg-red-500/20" />
+                            <div className="w-1 h-1 rounded-full bg-red-500/20" />
+                        </div>
                     </div>
 
                     {/* If popup is closed, show a hint */}
