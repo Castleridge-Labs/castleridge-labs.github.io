@@ -7,13 +7,21 @@ export function SiteHeader() {
     <header className="fixed top-0 z-50 w-full pointer-events-none mix-blend-difference text-white">
       <div className="w-full flex h-24 items-start justify-between px-8 py-8 md:px-12 md:py-8">
 
-        {/* Anti-Logo */}
+        {/* Branding */}
         <div className="pointer-events-auto">
-          <Link href="/" className="flex flex-col gap-1 group">
-            <span className="text-xs font-mono tracking-widest uppercase opacity-70 group-hover:opacity-100 transition-opacity">
-              UFC_Calendar_Ext
-            </span>
-            <span className="h-px w-0 group-hover:w-full bg-white transition-all duration-300" />
+          <Link href="/" className="flex items-center gap-3 group">
+            <div className="relative">
+              <Icons.logo />
+              <div className="absolute inset-0 bg-red-600/20 blur-xl opacity-0 group-hover:opacity-100 transition-opacity" />
+            </div>
+            <div className="flex flex-col">
+              <span className="text-sm font-bold tracking-tight text-white uppercase group-hover:text-red-500 transition-colors">
+                UFC Calendar
+              </span>
+              <span className="text-[10px] font-mono tracking-widest uppercase opacity-50">
+                Extension
+              </span>
+            </div>
           </Link>
         </div>
 
