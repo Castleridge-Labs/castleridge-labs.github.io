@@ -1,5 +1,6 @@
 import { BrowserSimulation } from "@/components/browser-simulation"
 import { FeatureGrid } from "@/components/feature-grid"
+import { siteConfig } from "@/config/site"
 
 export default function Home() {
   return (
@@ -45,14 +46,24 @@ export default function Home() {
           <p className="text-zinc-500 mb-8 font-mono text-sm uppercase tracking-widest">
             Join 2,000+ fans tracking live UFC data.
           </p>
-          <a
-            href="https://chrome.google.com/webstore/detail/ufc-calendar-with-live-up/pdagojbjdekpdicaefbiolkpgobiaoch"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex h-12 items-center justify-center rounded-full bg-white px-8 text-sm font-bold text-black hover:bg-zinc-200 transition-colors uppercase tracking-widest"
-          >
-            Add to Chrome
-          </a>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href={siteConfig.links.chrome}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex h-12 items-center justify-center rounded-full bg-white px-8 text-sm font-bold text-black hover:bg-zinc-200 transition-colors uppercase tracking-widest"
+            >
+              Add to Chrome
+            </a>
+            <a
+              href={siteConfig.links.edge}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex h-12 items-center justify-center rounded-full border border-white/20 bg-transparent px-8 text-sm font-bold text-white hover:bg-white/10 transition-colors uppercase tracking-widest"
+            >
+              Add to Edge
+            </a>
+          </div>
         </div>
       </section>
     </main>
