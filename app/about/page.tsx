@@ -54,7 +54,7 @@ const AboutPage: React.FC = () => {
               By Fans, For Fans.
             </h2>
             <p className="text-zinc-400 leading-relaxed font-medium">
-              Developed by <strong>Castleridge Labs</strong>, we focus on the core features that matter—without the clutter. We ensure you never miss a moment of the action, whether it's the main event or the early prelims.
+              Developed by <strong>Castleridge Labs</strong>, we focus on the core features that matter—without the clutter. We ensure you never miss a moment of the action, whether it&apos;s the main event or the early prelims.
             </p>
             <div className="space-y-4">
               {[
